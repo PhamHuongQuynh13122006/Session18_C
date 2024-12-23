@@ -411,9 +411,9 @@ int main() {
                 for (int i = n; i > pos; i--) {
                     menu[i] = menu[i - 1];
                 }
-                menu[pos].id = pos + 1; // ID sẽ được cập nhật sau cùng
+                menu[pos].id = pos + 1; 
                 printf("Input dish name: ");
-                getchar(); // Clear newline
+                getchar(); 
                 fgets(menu[pos].name, 100, stdin);
                 menu[pos].name[strcspn(menu[pos].name, "\n")] = '\0';
                 printf("Input price: ");
@@ -430,7 +430,7 @@ int main() {
                     break;
                 }
                 printf("Edit dish name: ");
-                getchar(); // Clear newline
+                getchar(); 
                 fgets(menu[pos].name, 100, stdin);
                 menu[pos].name[strcspn(menu[pos].name, "\n")] = '\0';
                 printf("Edit price: ");
@@ -469,7 +469,7 @@ int main() {
                 {
                     char value[100];
                     printf("Input dish name to find: ");
-                    getchar(); // Clear newline
+                    getchar(); 
                     fgets(value, 100, stdin);
                     value[strcspn(value, "\n")] = '\0';
                     int found = 0;
